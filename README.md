@@ -14,7 +14,6 @@
 ## 🚀 Live Demo
 
 [View Live Site](https://jerriward007.github.io/estatiq-wears/)  
-> *(Replace with your GitHub Pages link if deployed)*
 
 ## 🛠️ Technologies Used
 
