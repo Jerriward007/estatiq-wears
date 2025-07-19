@@ -29,19 +29,48 @@ html {
   color: #FFD700;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: -2rem;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  margin-bottom: -5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
 .home-hero-bg {
   background-image: url('https://i.imgur.com/fhsQZrF.jpeg');
-  height: 250px;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 15rem;
-  padding-bottom: 2rem;
-  color: white; 
-}
-
-.hero {
-  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5rem 2rem 8rem 2rem;
+  color: white;
+  text-align: center;
 }
  
 .collection {
@@ -458,6 +487,18 @@ h2 a:hover, h3 a:hover {
 
 .left-single {
   justify-content: left;
+}
+
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-hero-bg {
+    padding: 7rem 4rem 10rem 4rem;
+  }
 }
 
 @media (max-width: 768px) {
